@@ -9,7 +9,7 @@
               <h5 class="card-title">Nabil</h5>
               <h6 class="card-subtitle mb-2 text-muted">CSE</h6>
               <p class="card-text">Hello Everyone!. This is Abidur Rahman Nabil from AIUB studying in the 9th semester.You can check my works at github.</p>
-              <a href="#" class="card-link">GitHub</a>
+              <a href="https://github.com/nabilrt" class="card-link">GitHub</a>
             </div>
           </div>
     </div>
@@ -19,7 +19,7 @@
               <h5 class="card-title">Arpita</h5>
               <h6 class="card-subtitle mb-2 text-muted">CSE</h6>
               <p class="card-text">Hello Everyone!. This is Arpita Datta from AIUB studying in the 9th semester.You can check my works at github.</p>
-              <a href="#" class="card-link">GitHub</a>
+              <a href="https://github.com/dattaarpita" class="card-link">GitHub</a>
 
             </div>
           </div>
@@ -30,7 +30,7 @@
               <h5 class="card-title">Prioty</h5>
               <h6 class="card-subtitle mb-2 text-muted">CSE</h6>
               <p class="card-text">Hello Everyone!. This is Sazin Israk Prioty from AIUB studying in the 9th semester.You can check my works at github.</p>
-              <a href="#" class="card-link">GitHub</a>
+              <a href="https://github.com/sazinisrak" class="card-link">GitHub</a>
             </div>
           </div>
     </div>
