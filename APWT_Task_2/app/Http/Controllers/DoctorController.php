@@ -57,7 +57,7 @@ class DoctorController extends Controller
         if($uname==$this->cred['uname'] && $password==$this->cred['pass']){
             return view('Doctor.dashboard')->with('uname',$uname);
         }else{
-            return redirect('Doctor.login');
+            return back();
         }
     }
 

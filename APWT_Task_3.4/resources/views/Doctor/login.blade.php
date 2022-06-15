@@ -8,7 +8,7 @@
         <br><br>
 
     </div>
-    <form action="{{route('dashboard')}}" method="post" class="row g-3">
+    <form action="{{route('login')}}" method="post" class="row g-3">
         @csrf
         <div class="col-md-4">
         </div>
@@ -37,7 +37,7 @@
         <div class="col-md-4">
 
             <input type="submit" value="Login" class="btn btn-info"><span class="text-danger">
-            
+            @if(!empty($message)){{ $message }}@endif
             </span><br>
         </div>
         <div class="col-md-4">
