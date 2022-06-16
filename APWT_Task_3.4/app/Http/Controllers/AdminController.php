@@ -37,6 +37,13 @@ class AdminController extends Controller
         if($admin){
 
         $req->session()->put('admin_username',$username);
+        if($req->remember){
+            setcookie('uname',$req->username, time()+20);
+            setcookie('pass',$req->pass, time()+20);
+            return redirect()->route('admin_dashboard');
+        }
+
+
         return redirect()->route('admin_dashboard');
 
         }else{

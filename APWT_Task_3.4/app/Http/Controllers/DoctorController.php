@@ -108,6 +108,13 @@ class DoctorController extends Controller
         if($doctor){
 
         $req->session()->put('username',$username);
+
+        if($req->remember){
+            setcookie('uname',$req->username, time()+20);
+            setcookie('pass',$req->pass, time()+20);
+            return redirect()->route('dashboard');
+        }
+
         return redirect()->route('dashboard');
 
         }else{

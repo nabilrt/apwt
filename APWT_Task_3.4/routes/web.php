@@ -21,6 +21,8 @@ Route::get('/', [pageController::class,'home'])->name('home');
 Route::get('/services', [pageController::class,'services'])->name('services');
 Route::get('/about', [pageController::class,'about'])->name('about');
 Route::get('/departments', [pageController::class,'department'])->name('departments');
+Route::get('/contact', [pageController::class,'contact'])->name('contact');
+Route::post('/info',[pageController::class,'contactSubmitted'])->name('contactSubmitted');
 
 //Doctor Pages
 Route::get('/register', [DoctorController::class,'register'])->name('register');
@@ -29,8 +31,6 @@ Route::get('/login', [DoctorController::class,'login'])->name('login');
 Route::post('/login',[DoctorController::class,'loginRequest'])->name('login');
 Route::get('/dashboard', [DoctorController::class,'dashboard'])->name('dashboard')->middleware('ValidDoctor');
 Route::get('/logout',[DoctorController::class,'logout'])->name('logout');
-Route::get('/contact', [pageController::class,'contact'])->name('contact');
-Route::post('/info',[pageController::class,'contactSubmitted'])->name('contactSubmitted');
 Route::get('/profile',[DoctorController::class,'loadProfile'])->name('profile')->middleware('ValidDoctor');
 Route::get('/edit',[DoctorController::class,'editProfile'])->name('edit_profile')->middleware('ValidDoctor');
 Route::post('/update',[DoctorController::class,'updateProfile'])->name('updateProfile')->middleware('ValidDoctor');
