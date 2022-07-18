@@ -30,14 +30,16 @@
                 </span><br>
         </div>
         <div class="col-md-4">
-           
+
 
         </div><br>
         <div class="col-md-4">
-            <br>
+
+
 
         </div>
         <div class="col-md-4">
+            <input type="checkbox" name="ep" id="" onclick="showPassword()"> Show Password <br> <br>
             <input type="checkbox" name="remember" id="" class="form-select"> Remember Me <br><br>
 
             <input type="submit" value="Login" class="btn btn-info"><span class="text-danger">
@@ -48,4 +50,6 @@
         </div><br>
     </form>
 </div><br>
+<script type="text/javascript" src="js/utility.js">
+</script>
 @endsection
