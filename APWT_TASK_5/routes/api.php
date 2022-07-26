@@ -23,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/register',[StudentController::class,'sendData']);
 Route::get('/students/list',[StudentController::class,'getData']);
+Route::get('/student/{id}',[StudentController::class,'getStudent']);

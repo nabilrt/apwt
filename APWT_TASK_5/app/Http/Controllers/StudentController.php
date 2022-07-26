@@ -39,6 +39,11 @@ class StudentController extends Controller
         return Student::all();
     }
 
+    public function getStudent(Request $req){
+
+        return Student::where('id',$req->id)->first();
+    }
+
     /**
      * Show the form for creating a new resource.
      *
